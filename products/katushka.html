@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main-catalog.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Логотип">
+        <nav>
+            <ul>
+                <li class="main"><a href="../index.html">Главная</a></li>
+                <li class="catalog"><a href="../catalog.html">Каталог</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+      <div class="box-3">
+        <a href="../catalog.html">
+        <div class="btn btn-three">
+          <span>Назад</span>
+        </div>
+      </a>
+      </div>
+        <div class="product-page">
+            <div class="product-image">
+              <img id="product-image" src="../images/katushka-seriy.jpeg" alt="Product Name">
+            </div>
+            <div class="product-info">
+              <h1 class="product-name">Катушка</h1>
+              <p id="product-price" class="product-price">750 руб.</p>
+              <p class="product-description">Размер: 225х136х60 (40 шт)</p>
+              <div class="product-colors">
+                <h2>Цвета:</h2>
+                <div class="color-option">
+                  <div class="color-dot seriy"></div>
+                  <p data-price="750">Серый</p>
+                </div>
+                <div class="color-option">
+                  <div class="color-dot korich"></div>
+                  <p data-price="850">Коричневый</p>
+                </div>
+                <div class="color-option">
+                  <div class="color-dot cherniy"></div>
+                  <p data-price="850">Черный</p>
+                </div>
+              </div>
+              <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+          </div>
+    </main>
+
+    <script>
+      const colorOptions = document.querySelectorAll('.color-option');
+      const productImage = document.querySelector('#product-image');
+      const productPrice = document.querySelector('#product-price');
+
+      colorOptions.forEach(option => {
+        option.addEventListener('click', () => {
+          const color = option.querySelector('.color-dot').classList[1];
+          const price = option.querySelector('p').dataset.price;
+
+          // Update the image source based on the selected color
+          if (color === 'seriy') {
+            productImage.src = '/images/katushka-seriy.jpeg';
+          } else if (color === 'korich') {
+            productImage.src = '/images/katushka-korich.jpeg';
+          } else if (color === 'cherniy') {
+            productImage.src = '/images/katushka-cherniy.jpeg';
+          }
+
+          // Update the price based on the selected color
+          productPrice.textContent = `${price} руб.`;
+        });
+      });
+    </script>
+</body>
+</html>

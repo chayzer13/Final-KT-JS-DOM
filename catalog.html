@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main-catalog.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Логотип">
+        <nav>
+            <ul>
+                <li class="main"><a href="./index.html">Главная</a></li>
+                <li class="catalog"><a href="./catalog.html">Каталог</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="catalog">
+            <h1>Каталог</h1>
+            <div class="box">
+              <input type="checkbox" id="check">
+              <div class="search-box">
+                <input type="text" id="search" placeholder="Поиск товаров...">
+                <label for="check" class="icon">
+                  <i class="fas fa-search"></i>
+                </label>
+              </div>
+            </div>
+            <div class="products">
+              <div class="product" data-name="Старый город">
+                <a href="./products/star-gorod.html">
+                <img src="./images/star-gorod-seriy.jpg" alt="Старый город">
+                <h3>Старый город</h3>
+                <p>Размер: 172х115х60 | 115х115х60 | 86х115х60</p>
+                <div class="prices">
+                  <span class="price discount">1190 руб.</span>
+                  <span class="price">850 руб.</span>
+                </div>
+              </a>
+              </div>
+              <div class="product" data-name="Новый город">
+                <a href="./products/nov-gorod.html">
+                <img src="./images/nov-gorod-seriy.jpeg" alt="Новый город">
+                <h3>Новый город</h3>
+                <p>Размер: 120х160; 160х160; 240х160</p>
+                <div class="prices">
+                  <span class="price discount">1190 руб.</span>
+                  <span class="price">850 руб.</span>
+                </div>
+              </a>
+              </div>
+              <div class="product" data-name="Кирпич">
+                <a href="./products/kirpich.html">
+                <img src="./images/kirpich-seriy.jpg" alt="Кирпич">
+                <h3>Кирпич</h3>
+                <p>Размер: 200х100х60 (50 шт)</p>
+                <div class="prices">
+                  <span class="price discount">1000 руб.</span>
+                  <span class="price">790 руб.</span>
+                </div>
+              </a>
+              </div>
+              <div class="product" data-name="Английский булыжник">
+                <a href="./products/angl-bul.html">
+                <img src="./images/angl-bul-seriy.jpg" alt="Английский булыжник">
+                <h3>Английский булыжник</h3>
+                <p>Размер: 250х125х60</p>
+                <div class="prices">
+                  <span class="price discount">1000 руб.</span>
+                  <span class="price">790 руб.</span>
+                </div>
+              </a>
+              </div>
+              <div class="product" data-name="Волна">
+                <a href="./products/volna.html">
+                <img src="./images/volna-seriy.jpeg" alt="Волна">
+                <h3>Волна</h3>
+                <p>Размер: 237х103х45 (40 шт)</p>
+                <div class="prices">
+                  <span class="price discount">900 руб.</span>
+                  <span class="price">750 руб.</span>
+                </div>
+              </a>
+              </div>
+              <div class="product" data-name="Катушка">
+                <a href="./products/katushka.html">
+                <img src="./images/katushka-seriy.jpeg" alt="Катушка">
+                <h3>Катушка</h3>
+                <p>Размер: 225х136х60 (40 шт)</p>
+                <div class="prices">
+                  <span class="price discount">900 руб.</span>
+                  <span class="price">750 руб.</span>
+                </div>
+              </a>
+              </div>
+            </div>
+
+            <script src="script.js"></script>
+          
+        
+    </main>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
