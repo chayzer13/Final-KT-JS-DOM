@@ -91,18 +91,18 @@
 
 .container{
     position: absolute;
-    top: 1466px;
+    top: 145%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1855px;
-    height: 800px;
+    width: 1000px;
+    height: 600px;
     background: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
 }
 
 .container .slide .item{
-    width: 400px;
-    height: 500px;
+    width: 200px;
+    height: 300px;
     position: absolute;  
     top: 50%;
     transform: translate(0, -50%);
@@ -126,17 +126,17 @@
 
 
 .slide .item:nth-child(3){
-    left: 45%;
+    left: 50%;
 }
 .slide .item:nth-child(4){
-    left: calc(60% + 220px);
+    left: calc(50% + 220px);
 }
 .slide .item:nth-child(5){
-    left: calc(60% + 440px);
+    left: calc(50% + 440px);
     
 }
 .slide .item:nth-child(n + 6){
-    left: calc(60% + 660px);
+    left: calc(50% + 660px);
     opacity: 0;
 }
 
@@ -166,6 +166,12 @@
     animation: animate 1s ease-in-out 1 forwards;
 }
 
+.content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
 
 .content button{
     padding: 10px 20px;
